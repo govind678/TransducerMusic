@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC084FD6183457D100D0D22D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC084FD5183457D100D0D22D /* SettingsViewController.m */; };
+		FC084FD918345E1700D0D22D /* OSCCom.m in Sources */ = {isa = PBXBuildFile; fileRef = FC084FD818345E1700D0D22D /* OSCCom.m */; };
+		FC3ECE29182F67A20005BB1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3ECE28182F67A20005BB1B /* Foundation.framework */; };
+		FC3ECE2B182F67A20005BB1B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3ECE2A182F67A20005BB1B /* CoreGraphics.framework */; };
+		FC3ECE2D182F67A20005BB1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3ECE2C182F67A20005BB1B /* UIKit.framework */; };
+		FC3ECE33182F67A20005BB1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC3ECE31182F67A20005BB1B /* InfoPlist.strings */; };
+		FC3ECE35182F67A20005BB1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3ECE34182F67A20005BB1B /* main.m */; };
+		FC3ECE39182F67A20005BB1B /* TransducerMusicAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3ECE38182F67A20005BB1B /* TransducerMusicAppDelegate.m */; };
+		FC3ECE3C182F67A20005BB1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3ECE3A182F67A20005BB1B /* Main.storyboard */; };
+		FC3ECE3F182F67A20005BB1B /* TransducerMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3ECE3E182F67A20005BB1B /* TransducerMusicViewController.m */; };
+		FC3ECE41182F67A20005BB1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3ECE40182F67A20005BB1B /* Images.xcassets */; };
+		FC3ECE48182F67A20005BB1B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3ECE47182F67A20005BB1B /* XCTest.framework */; };
+		FC3ECE49182F67A20005BB1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3ECE28182F67A20005BB1B /* Foundation.framework */; };
+		FC3ECE4A182F67A20005BB1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3ECE2C182F67A20005BB1B /* UIKit.framework */; };
+		FC3ECE52182F67A20005BB1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC3ECE50182F67A20005BB1B /* InfoPlist.strings */; };
+		FC3ECE54182F67A20005BB1B /* TransducerMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3ECE53182F67A20005BB1B /* TransducerMusicTests.m */; };
+		FC3ECEA8182F6F270005BB1B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3ECEA7182F6F270005BB1B /* CoreMotion.framework */; };
+		FC977C08182F8C460038F829 /* VVBasics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC977C07182F8C460038F829 /* VVBasics.framework */; };
+		FC977C0B182F8C940038F829 /* VVOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC977C09182F8C550038F829 /* VVOSC.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC3ECE4B182F67A20005BB1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC3ECE1D182F67A20005BB1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC3ECE24182F67A20005BB1B;
+			remoteInfo = TransducerMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC084FD4183457D100D0D22D /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		FC084FD5183457D100D0D22D /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		FC084FD718345E1600D0D22D /* OSCCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCCom.h; sourceTree = "<group>"; };
+		FC084FD818345E1700D0D22D /* OSCCom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCCom.m; sourceTree = "<group>"; };
+		FC3ECE25182F67A20005BB1B /* TransducerMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransducerMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3ECE28182F67A20005BB1B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FC3ECE2A182F67A20005BB1B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FC3ECE2C182F67A20005BB1B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FC3ECE30182F67A20005BB1B /* TransducerMusic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransducerMusic-Info.plist"; sourceTree = "<group>"; };
+		FC3ECE32182F67A20005BB1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC3ECE34182F67A20005BB1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC3ECE36182F67A20005BB1B /* TransducerMusic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TransducerMusic-Prefix.pch"; sourceTree = "<group>"; };
+		FC3ECE37182F67A20005BB1B /* TransducerMusicAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransducerMusicAppDelegate.h; sourceTree = "<group>"; };
+		FC3ECE38182F67A20005BB1B /* TransducerMusicAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransducerMusicAppDelegate.m; sourceTree = "<group>"; };
+		FC3ECE3B182F67A20005BB1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC3ECE3D182F67A20005BB1B /* TransducerMusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransducerMusicViewController.h; sourceTree = "<group>"; };
+		FC3ECE3E182F67A20005BB1B /* TransducerMusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransducerMusicViewController.m; sourceTree = "<group>"; };
+		FC3ECE40182F67A20005BB1B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FC3ECE46182F67A20005BB1B /* TransducerMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransducerMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3ECE47182F67A20005BB1B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FC3ECE4F182F67A20005BB1B /* TransducerMusicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransducerMusicTests-Info.plist"; sourceTree = "<group>"; };
+		FC3ECE51182F67A20005BB1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC3ECE53182F67A20005BB1B /* TransducerMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransducerMusicTests.m; sourceTree = "<group>"; };
+		FC3ECEA7182F6F270005BB1B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		FC977C05182F8B250038F829 /* libVVBasics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVVBasics.a; path = ../../../../../../Library/SDKs/VVBasics/iphoneos.sdk/usr/local/lib/libVVBasics.a; sourceTree = "<group>"; };
+		FC977C07182F8C460038F829 /* VVBasics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VVBasics.framework; path = "../vvopensource/build@rpath/VVBasics.framework"; sourceTree = "<group>"; };
+		FC977C09182F8C550038F829 /* VVOSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VVOSC.framework; path = "../vvopensource/build@rpath/VVOSC.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC3ECE22182F67A20005BB1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC977C0B182F8C940038F829 /* VVOSC.framework in Frameworks */,
+				FC977C08182F8C460038F829 /* VVBasics.framework in Frameworks */,
+				FC3ECEA8182F6F270005BB1B /* CoreMotion.framework in Frameworks */,
+				FC3ECE2B182F67A20005BB1B /* CoreGraphics.framework in Frameworks */,
+				FC3ECE2D182F67A20005BB1B /* UIKit.framework in Frameworks */,
+				FC3ECE29182F67A20005BB1B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3ECE43182F67A20005BB1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3ECE48182F67A20005BB1B /* XCTest.framework in Frameworks */,
+				FC3ECE4A182F67A20005BB1B /* UIKit.framework in Frameworks */,
+				FC3ECE49182F67A20005BB1B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC3ECE1C182F67A20005BB1B = {
+			isa = PBXGroup;
+			children = (
+				FC3ECE2E182F67A20005BB1B /* TransducerMusic */,
+				FC3ECE4D182F67A20005BB1B /* TransducerMusicTests */,
+				FC3ECE27182F67A20005BB1B /* Frameworks */,
+				FC3ECE26182F67A20005BB1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC3ECE26182F67A20005BB1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC3ECE25182F67A20005BB1B /* TransducerMusic.app */,
+				FC3ECE46182F67A20005BB1B /* TransducerMusicTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC3ECE27182F67A20005BB1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC977C09182F8C550038F829 /* VVOSC.framework */,
+				FC977C07182F8C460038F829 /* VVBasics.framework */,
+				FC977C05182F8B250038F829 /* libVVBasics.a */,
+				FC3ECEA7182F6F270005BB1B /* CoreMotion.framework */,
+				FC3ECE28182F67A20005BB1B /* Foundation.framework */,
+				FC3ECE2A182F67A20005BB1B /* CoreGraphics.framework */,
+				FC3ECE2C182F67A20005BB1B /* UIKit.framework */,
+				FC3ECE47182F67A20005BB1B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC3ECE2E182F67A20005BB1B /* TransducerMusic */ = {
+			isa = PBXGroup;
+			children = (
+				FC3ECE37182F67A20005BB1B /* TransducerMusicAppDelegate.h */,
+				FC3ECE38182F67A20005BB1B /* TransducerMusicAppDelegate.m */,
+				FC3ECE3A182F67A20005BB1B /* Main.storyboard */,
+				FC084FD4183457D100D0D22D /* SettingsViewController.h */,
+				FC084FD5183457D100D0D22D /* SettingsViewController.m */,
+				FC3ECE3D182F67A20005BB1B /* TransducerMusicViewController.h */,
+				FC3ECE3E182F67A20005BB1B /* TransducerMusicViewController.m */,
+				FC084FD718345E1600D0D22D /* OSCCom.h */,
+				FC084FD818345E1700D0D22D /* OSCCom.m */,
+				FC3ECE40182F67A20005BB1B /* Images.xcassets */,
+				FC3ECE2F182F67A20005BB1B /* Supporting Files */,
+			);
+			path = TransducerMusic;
+			sourceTree = "<group>";
+		};
+		FC3ECE2F182F67A20005BB1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC3ECE30182F67A20005BB1B /* TransducerMusic-Info.plist */,
+				FC3ECE31182F67A20005BB1B /* InfoPlist.strings */,
+				FC3ECE34182F67A20005BB1B /* main.m */,
+				FC3ECE36182F67A20005BB1B /* TransducerMusic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC3ECE4D182F67A20005BB1B /* TransducerMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC3ECE53182F67A20005BB1B /* TransducerMusicTests.m */,
+				FC3ECE4E182F67A20005BB1B /* Supporting Files */,
+			);
+			path = TransducerMusicTests;
+			sourceTree = "<group>";
+		};
+		FC3ECE4E182F67A20005BB1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC3ECE4F182F67A20005BB1B /* TransducerMusicTests-Info.plist */,
+				FC3ECE50182F67A20005BB1B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC3ECE24182F67A20005BB1B /* TransducerMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC3ECE57182F67A20005BB1B /* Build configuration list for PBXNativeTarget "TransducerMusic" */;
+			buildPhases = (
+				FC3ECE21182F67A20005BB1B /* Sources */,
+				FC3ECE22182F67A20005BB1B /* Frameworks */,
+				FC3ECE23182F67A20005BB1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransducerMusic;
+			productName = TransducerMusic;
+			productReference = FC3ECE25182F67A20005BB1B /* TransducerMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC3ECE45182F67A20005BB1B /* TransducerMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC3ECE5A182F67A20005BB1B /* Build configuration list for PBXNativeTarget "TransducerMusicTests" */;
+			buildPhases = (
+				FC3ECE42182F67A20005BB1B /* Sources */,
+				FC3ECE43182F67A20005BB1B /* Frameworks */,
+				FC3ECE44182F67A20005BB1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC3ECE4C182F67A20005BB1B /* PBXTargetDependency */,
+			);
+			name = TransducerMusicTests;
+			productName = TransducerMusicTests;
+			productReference = FC3ECE46182F67A20005BB1B /* TransducerMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC3ECE1D182F67A20005BB1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TransducerMusic;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = GTCMT;
+				TargetAttributes = {
+					FC3ECE45182F67A20005BB1B = {
+						TestTargetID = FC3ECE24182F67A20005BB1B;
+					};
+				};
+			};
+			buildConfigurationList = FC3ECE20182F67A20005BB1B /* Build configuration list for PBXProject "TransducerMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC3ECE1C182F67A20005BB1B;
+			productRefGroup = FC3ECE26182F67A20005BB1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC3ECE24182F67A20005BB1B /* TransducerMusic */,
+				FC3ECE45182F67A20005BB1B /* TransducerMusicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC3ECE23182F67A20005BB1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3ECE41182F67A20005BB1B /* Images.xcassets in Resources */,
+				FC3ECE33182F67A20005BB1B /* InfoPlist.strings in Resources */,
+				FC3ECE3C182F67A20005BB1B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3ECE44182F67A20005BB1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3ECE52182F67A20005BB1B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC3ECE21182F67A20005BB1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3ECE3F182F67A20005BB1B /* TransducerMusicViewController.m in Sources */,
+				FC3ECE35182F67A20005BB1B /* main.m in Sources */,
+				FC3ECE39182F67A20005BB1B /* TransducerMusicAppDelegate.m in Sources */,
+				FC084FD6183457D100D0D22D /* SettingsViewController.m in Sources */,
+				FC084FD918345E1700D0D22D /* OSCCom.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3ECE42182F67A20005BB1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3ECE54182F67A20005BB1B /* TransducerMusicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC3ECE4C182F67A20005BB1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC3ECE24182F67A20005BB1B /* TransducerMusic */;
+			targetProxy = FC3ECE4B182F67A20005BB1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC3ECE31182F67A20005BB1B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC3ECE32182F67A20005BB1B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FC3ECE3A182F67A20005BB1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC3ECE3B182F67A20005BB1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC3ECE50182F67A20005BB1B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC3ECE51182F67A20005BB1B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC3ECE55182F67A20005BB1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC3ECE56182F67A20005BB1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC3ECE58182F67A20005BB1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = $HOME/Library/SDKs/VVOSC/iphoneos.sdk;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/govindarampingali/Documents/GaTech/Fall\\ 2013/MUSI\\ 6304/Project\\ 3/vvopensource/build@rpath",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransducerMusic/TransducerMusic-Prefix.pch";
+				INFOPLIST_FILE = "TransducerMusic/TransducerMusic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/govindarampingali/Documents/GaTech/Fall\\ 2013/MUSI\\ 6304/Project\\ 3/TransducerMusic",
+					"/Users/govindarampingali/Documents/GaTech/Fall\\ 2013/MUSI\\ 6304/Project\\ 3/TransducerMusic/TransducerMusic/VVOSC",
+					"$(USER_LIBRARY_DIR)/SDKs/VVBasics/iphoneos.sdk/usr/local/lib",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lVVOSC",
+					"-lVVBasics",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FC3ECE59182F67A20005BB1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = $HOME/Library/SDKs/VVOSC/iphoneos.sdk;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/govindarampingali/Documents/GaTech/Fall\\ 2013/MUSI\\ 6304/Project\\ 3/vvopensource/build@rpath",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransducerMusic/TransducerMusic-Prefix.pch";
+				INFOPLIST_FILE = "TransducerMusic/TransducerMusic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/govindarampingali/Documents/GaTech/Fall\\ 2013/MUSI\\ 6304/Project\\ 3/TransducerMusic",
+					"/Users/govindarampingali/Documents/GaTech/Fall\\ 2013/MUSI\\ 6304/Project\\ 3/TransducerMusic/TransducerMusic/VVOSC",
+					"$(USER_LIBRARY_DIR)/SDKs/VVBasics/iphoneos.sdk/usr/local/lib",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lVVOSC",
+					"-lVVBasics",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FC3ECE5B182F67A20005BB1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TransducerMusic.app/TransducerMusic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransducerMusic/TransducerMusic-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TransducerMusicTests/TransducerMusicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FC3ECE5C182F67A20005BB1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TransducerMusic.app/TransducerMusic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransducerMusic/TransducerMusic-Prefix.pch";
+				INFOPLIST_FILE = "TransducerMusicTests/TransducerMusicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC3ECE20182F67A20005BB1B /* Build configuration list for PBXProject "TransducerMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3ECE55182F67A20005BB1B /* Debug */,
+				FC3ECE56182F67A20005BB1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC3ECE57182F67A20005BB1B /* Build configuration list for PBXNativeTarget "TransducerMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3ECE58182F67A20005BB1B /* Debug */,
+				FC3ECE59182F67A20005BB1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC3ECE5A182F67A20005BB1B /* Build configuration list for PBXNativeTarget "TransducerMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3ECE5B182F67A20005BB1B /* Debug */,
+				FC3ECE5C182F67A20005BB1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC3ECE1D182F67A20005BB1B /* Project object */;
+}
